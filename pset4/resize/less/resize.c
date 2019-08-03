@@ -57,10 +57,10 @@ int main(int argc, char *argv[])
     }
 
     // determine new dimensions
-    int oldWidth = bi.biWidth;
-    int oldHeight = bi.biHeight;
-    int newWidth = oldWidth * n;
-    int newHeight = oldHeight * n;
+    long oldWidth = bi.biWidth;
+    long oldHeight = bi.biHeight;
+    long newWidth = oldWidth * n;
+    long newHeight = oldHeight * n;
 
     // determine padding for scanlines
     int inPadding = (4 - (oldWidth * sizeof(RGBTRIPLE)) % 4) % 4;
